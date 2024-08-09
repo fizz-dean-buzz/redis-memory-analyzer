@@ -113,6 +113,21 @@ def size_of_ziplist_aligned_string(value):
 
     return Jemalloc.align(len(value))
 
+def size_of_listpack_aligned_string(value):
+    try:
+        int(value)
+        return 1
+    except ValueError:
+        pass
+
+    length = len(value)
+    if length < 64:
+        return 1 + length
+    elif length < 16384:
+        return 2 + length
+    else:
+        return 5 + length
+
 
 def linkedlist_overhead():
     # A list has 5 pointers + an unsigned long
