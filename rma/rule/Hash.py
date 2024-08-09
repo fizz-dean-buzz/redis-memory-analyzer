@@ -37,6 +37,10 @@ class HashStatEntry(object):
             self.system = ziplist_overhead(self.count)
             self.fieldAlignedBytes = sum(map(size_of_ziplist_aligned_string, self.keys))
             self.valueAlignedBytes = sum(map(size_of_ziplist_aligned_string, self.values))
+        elif self.encoding == REDIS_ENCODING_ID_LISTPACK:
+            self.system = listpack_overhead(self.count)
+            self.fieldAlignedBytes = sum(map(size_of_listpack_aligned_string, self.keys))
+            self.valueAlignedBytes = sum(map(size_of_listpack_aligned_string, self.values))
         else:
             raise Exception('Panic', 'Unknown encoding %s in %s' % (self.encoding, key_name))
 
