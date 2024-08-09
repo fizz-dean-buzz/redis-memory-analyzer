@@ -38,7 +38,7 @@ class HashStatEntry(object):
             self.fieldAlignedBytes = sum(map(size_of_ziplist_aligned_string, self.keys))
             self.valueAlignedBytes = sum(map(size_of_ziplist_aligned_string, self.values))
         elif self.encoding == REDIS_ENCODING_ID_LISTPACK = 9:
-            self.system = ziplist_overhead(self.count)
+            self.system = listpack_overhead(self.count)
             self.fieldAlignedBytes = sum(map(size_of_ziplist_aligned_string, self.keys))
             self.valueAlignedBytes = sum(map(size_of_ziplist_aligned_string, self.values))
         else:
