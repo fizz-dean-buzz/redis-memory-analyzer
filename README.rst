@@ -30,7 +30,7 @@ To install from source :
 
 ::
 
-    pip install git+https://github.com/fizz-dean-buzz/redis-memory-analyzer@v0.2.0
+    pip install git+https://github.com/fizz-dean-buzz/redis-memory-analyzer@master
 
 Running
 -------
