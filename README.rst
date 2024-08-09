@@ -30,7 +30,7 @@ To install from source :
 
 ::
 
-    pip install git+https://github.com/gamenet/redis-memory-analyzer@v0.2.0
+    pip install git+https://github.com/fizz-dean-buzz/redis-memory-analyzer@v0.2.0
 
 Running
 -------
@@ -227,15 +227,15 @@ License
 -------
 
 This application was developed for using in
-`GameNet <https://gamenet.ru/>`__ project as part of Redis memory
+`fizz-dean-buzz <https://fizz-dean-buzz.ru/>`__ project as part of Redis memory
 optimizations and analise. RMA is licensed under the MIT License. See
-`LICENSE <https://github.com/gamenet/redis-memory-analyzer/blob/master/LICENSE>`__
+`LICENSE <https://github.com/fizz-dean-buzz/redis-memory-analyzer/blob/master/LICENSE>`__
 
 .. |PyPI version| image:: https://badge.fury.io/py/rma.svg
    :target: https://badge.fury.io/py/rma
-.. |Build Status| image:: https://travis-ci.org/gamenet/redis-memory-analyzer.svg?branch=master
-   :target: https://travis-ci.org/gamenet/redis-memory-analyzer
-.. |Code Health| image:: https://landscape.io/github/gamenet/redis-memory-analyzer/master/landscape.svg?style=flat-square
-   :target: https://landscape.io/github/gamenet/redis-memory-analyzer/master
+.. |Build Status| image:: https://travis-ci.org/fizz-dean-buzz/redis-memory-analyzer.svg?branch=master
+   :target: https://travis-ci.org/fizz-dean-buzz/redis-memory-analyzer
+.. |Code Health| image:: https://landscape.io/github/fizz-dean-buzz/redis-memory-analyzer/master/landscape.svg?style=flat-square
+   :target: https://landscape.io/github/fizz-dean-buzz/redis-memory-analyzer/master
 .. |GitHub license| image:: https://img.shields.io/badge/license-MIT-blue.svg
-   :target: https://raw.githubusercontent.com/gamenet/redis-memory-analyzer/master/LICENSE
+   :target: https://raw.githubusercontent.com/fizz-dean-buzz/redis-memory-analyzer/master/LICENSE
