@@ -98,6 +98,10 @@ def ziplist_overhead(size):
     return Jemalloc.align(12 + 21 * size)
 
 
+def listpack_overhead(size):
+    return Jemalloc.align(6 + (1 + 20) * size + 1)
+
+
 def size_of_ziplist_aligned_string(value):
     # Looks like we need something more complex here. We use calculation as 21 bytes per entry + len of string
     # or len of pointer. Redis use more RAM saving policy but after aligning it has infelicity ~3-5%
